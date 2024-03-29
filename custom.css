@@ -1,0 +1,67 @@
+.header {
+    /* Custom CSS styles */
+    background-color: pink;
+    color: gray;
+    padding: 1rem;
+
+    /* Flexbox for horizontal alignment */
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: space-between; /* Distributes space between and around content items */
+}
+
+.header a {
+    /* Custom styles for links in the header */
+    margin-right: 1rem; /* Adjust as needed */
+    font-weight: bold;
+    color: white; /* Normal text color */
+    text-decoration: none; /* Removes underline from links normally */
+
+    /* Hover styles */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Additional class for navigation links */
+.header-nav {
+    /* Flexbox for the navigation links */
+    display: flex;
+    gap: 1rem; /* Defines space between each link */
+}
+
+.header-nav a:hover {
+    color: #ADD8E6; /* Change to your preferred hover color */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+/* Base styles - apply for all screen sizes */
+.post {
+    font-size: 16px; /* Comfortable base font size */
+    line-height: 1.6; /* Adequate line spacing */
+    margin-bottom: 2rem; /* Space between posts */
+}
+
+/* Larger screens */
+@media screen and (min-width: 768px) {
+    .post {
+        font-size: 18px; /* Slightly larger font for larger screens */
+    }
+}
+
+/* Smaller screens */
+@media screen and (max-width: 480px) {
+    .post {
+        font-size: 14px; /* Slightly smaller font for mobile devices */
+    }
+}
+
+/* custom.css or in your inline <style> tag */
+.bg-light-mode {
+    background-color: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text */
+  }
+  
+  .dark:bg-dark-mode {
+    background-color: #1a202c; /* Dark mode background */
+    color: #ffffff; /* Dark mode text */
+  }
+  
